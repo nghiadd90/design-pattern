@@ -16,7 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FRDP\\": "src/"
+            "DesignPattern\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DesignPattern\\Test\\": "tests/"
         }
     }    
 }
