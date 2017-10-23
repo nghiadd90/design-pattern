@@ -1,7 +1,8 @@
 <?php
 namespace DesignPattern\Prototype;
 
-abstract class AbstractBookPrototype {
+abstract class AbstractBookPrototype
+{
     protected $title;
     protected $category;
     
