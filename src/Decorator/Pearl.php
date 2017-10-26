@@ -2,17 +2,15 @@
 
 namespace DesignPattern\Decorator;
 
-class Pearl extends AbstractIngredientDecorator
+class Pearl extends IngredientDecorator
 {
-	private $ingredient;
-
-	public function __construct(IngredientInterface $ingredient)
-	{
-		$this->ingredient = $ingredient;
-	}
-
 	public function cost()
 	{
-		# code...
+		return $this->ingredient->cost() + 10;
+	}
+
+	public function getDescription()
+	{
+		return $this->ingredient->getDescription() . ', Pearl';
 	}
 }
