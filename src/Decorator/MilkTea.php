@@ -5,14 +5,15 @@ namespace DesignPattern\Decorator;
 
 class MilkTea implements IngredientInterface
 {
-	
-	public function __construct()
-	{
-		# code...
-	}
+	private $description = 'Milk Tea';
 
 	public function cost()
 	{
-		
+		return 30;
+	}
+
+	public function getDescription()
+	{
+		return $this->description;
 	}
 }
